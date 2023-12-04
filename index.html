@@ -239,7 +239,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="java">
         <h2 class="w3-text-light-grey">API</h2>
         <hr style="width:200px" class="w3-opacity">
-        <p>Here!</p>
+        <p>Here!</p><br>
+        <h3>JavaScript Web Workers API</h3>
+        <p>Joke: <i id="demo" style="color: white"></i></p>
+        <button onclick="myfunction()">press for joke</button> 
+
       </div>
 
   <!-- Contact Section -->
@@ -320,6 +324,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     var result = Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2));
     document.getElementById("pythagoras").innerHTML = result;
+    }
+
+  
+    function myfunction() {
+        fetch("https://official-joke-api.appspot.com/random_joke")
+          .then(function(response){
+            return response.json()
+          })
+          .then(function(data){
+            let txt = "";
+            for(let x in data) {
+              txt += data[x] + " ";
+              document.getElementById("demo").innerHTML = txt;
+            };
+            return data;
+          })
     }
 
 </script>
