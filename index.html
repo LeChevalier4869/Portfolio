@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Assawin's Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,6 +16,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+
+.result { margin-left: 200px; }
+.result1 { margin-left: 160px; }
 </style>
 </head>
 <body class="w3-black">
@@ -24,13 +28,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <img src=".\pics\scan0030_1.jpg" style="width:100%">
-  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
-  </a>
-  <a href="java.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-phone w3-xxlarge"></i>
-    <p>JAVA</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
@@ -39,6 +39,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>PHOTOS</p>
+  </a>
+  <a href="#java" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-phone w3-xxlarge"></i>
+    <p>JAVA</p>
+  </a>
+  <a href="#api" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-phone w3-xxlarge"></i>
+    <p>API</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
@@ -52,6 +60,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
     <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#java" class="w3-bar-item w3-button" style="width:25% !important">JAVA</a>
+    <a href="#api" class="w3-bar-item w3-button" style="width:25% !important">API</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -69,7 +79,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">My Name is Chicky.</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Mia and her friends have a magical evening in the snow. Whilst sledging, they come across a bell tower. Baby Panda presses a button and the tower lights up, along with the entire town below! Santa appears and takes Mia and Little Monkey on a ride in his sleigh, before dropping them off to go ice skating.
+    <p>Yo soy un hombre. Yo necesito dinero. Mia and her friends have a magical evening in the snow. Whilst sledging, they come across a bell tower. Baby Panda presses a button and the tower lights up, along with the entire town below! Santa appears and takes Mia and Little Monkey on a ride in his sleigh, before dropping them off to go ice skating.
 
         Little Baby Bum follows the musical adventures of Mia, Twinkle the Star and Baby Max. Everyday moments like bath time, getting dressed, or playing peekaboo become even more fun with new and classic nursery rhymes.
         
@@ -78,15 +88,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <p class="w3-wide">Piano</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:20%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:45%"></div>
     </div>
     <p class="w3-wide">Violin</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:7%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:10%"></div>
     </div>
     <p class="w3-wide">Guitar</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:45%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:30%"></div>
     </div><br>
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
@@ -169,27 +179,68 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
+    <h2 class="w3-text-light-grey">My Certificate</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
+        <img src=".\pics\d.PNG" style="width:100%">
+        <img src=".\pics\lead.PNG" style="width:100%">
+        <img src=".\pics\พ.PNG" style="width:100%">
       </div>
 
       <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
+        <img src=".\pics\PoliceVolunteer 59.PNG" style="width:100%">
+        <img src=".\pics\ปฎิบัติวิปัสสนากรรมฐาน.PNG" style="width:100%">
+        <img src=".\pics\physics.PNG" style="width:100%">
       </div>
     <!-- End photo grid -->
     </div>
   <!-- End Portfolio Section -->
   </div>
+
+      <!-- About My LAB -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="java">
+        <h2 class="w3-text-light-grey">My Lab</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>Please click button for run</p>
+    
+        <button type="button" onclick="ucFirst()" class="w3-button w3-light-grey w3-padding-large w3-section">
+          <i ></i> Run: Lab 1 Fisrt letter upper
+        </button>
+        <br>
+        <button type="button" onclick="findx()" class="w3-button w3-light-grey w3-padding-large w3-section">
+            <i ></i> Run: Lab 2 Find porn word
+        </button>
+        <br>
+        <button type="button" onclick="randomNumber()" class="w3-button w3-light-grey w3-padding-large w3-section">
+            <i ></i> Run: Lab 3 Roll the dice
+        </button>
+        <br>
+        <button type="button" onclick="runAtoZ()" class="w3-button w3-light-grey w3-padding-large w3-section">
+          <i ></i> Run: Lab 4 A to Z
+        </button>
+        <i class="result">Result: &nbsp;&nbsp;<i id="atoz"></i></i>
+        <br>
+        <button type="button" onclick="calPythagoras()" class="w3-button w3-light-grey w3-padding-large w3-section">
+          <i ></i> Run: Lab 5 Pythagoras
+        </button>
+        <i class="result1">Result: &nbsp;&nbsp;<i id="pythagoras"></i></i><br>
+        <form>
+          <lable for="width">width</lable>
+          <input id="width" type="text"> &nbsp;&nbsp;&nbsp;&nbsp;
+          <lable for="height">height</lable>
+          <input id="height" type="text">
+        </form>
+      </div>
+
+      <!-- About API -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="java">
+        <h2 class="w3-text-light-grey">API</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>Here!</p>
+      </div>
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -197,9 +248,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> The moon, Solar System</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +44 7893 915211</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Lechevalier4869@gmail.com</p>
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
 
@@ -214,6 +265,65 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         </button>
       </p>
     </form>
+
+<script>
+    // 5 lab
+
+    // Lab_3_Fisrt_letter_upper_p49
+    function ucFirst() {
+        alert("Lab 1: Fisrt letter upper")
+        let str = prompt("Enter letter: ");
+        let sli = str.slice(0,1);
+        str = sli.toUpperCase() + str.slice(1, str.length);
+        
+        return alert(str);
+    } 
+
+    // Lab_4_find_letter_p50
+    function findx () {
+        alert("Lab 2: Find porn word");
+        let str = prompt("Enter str: ");
+        str = str.toLowerCase();
+        if(str.includes('xxx') || str.includes('sex') || str.includes('porn')){
+            return alert("True");
+        } else {
+            return alert("False");
+        }
+    }
+
+    // Lab_7_Random_Between1to6_p25
+    function randomNumber() {
+                return alert(Math.trunc((Math.random() * 6) + 1));
+        } 
+
+    // Lab1 callback a to z 1sec
+    async function runAtoZ() {
+      const ascii = 65;
+      const delay = 1000;
+      for (let i = ascii; i <= 90; i++) {
+          await new Promise(resolve => setTimeout(resolve, delay));
+          document.getElementById("atoz").innerHTML = String.fromCharCode(i);
+      }
+      await new Promise(resolve => setTimeout(resolve, delay));
+      document.getElementById("atoz").innerHTML = "Complete";
+    }
+
+    // Pythagoras_p27
+    function calPythagoras() {
+    var width = parseFloat(document.getElementById("width").value);
+    var height = parseFloat(document.getElementById("height").value);
+
+    if (isNaN(width) || isNaN(height)) {
+        document.getElementById("pythagoras").innerHTML = "Invalid input";
+        return;
+    }
+
+    var result = Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2));
+    document.getElementById("pythagoras").innerHTML = result;
+    }
+
+</script>
+
   <!-- End Contact Section -->
   </div>
   
@@ -225,7 +335,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">Black hole</a></p>
   <!-- End footer -->
   </footer>
 
