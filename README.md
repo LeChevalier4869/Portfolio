@@ -1,10 +1,10 @@
 # Portfolio
 Codecamp
 
-Assawin Indraprasitdhi\n
+Assawin Indraprasitdhi
 
-Faculty of Engineering\n
+Faculty of Engineering
 
-Major Computer Engineering\n
+Major Computer Engineering
 
 Rajamangala University of Technology Isan Khonkaen Campus
