@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Population Density Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+
+    <h1>Population density</h1>
+  <div>
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <h1>2</h1>
+  <div>
+    <canvas id="myChart2"></canvas>
+  </div>
+
+  <script>
+    //1
+
+
+    // เริ่มโหลดข้อมูล JSON และสร้าง Chart เมื่อโหลดเสร็จสมบูรณ์
+    fetch('country-by-population-density.json')
+      .then(response => response.json())
+      .then(jsonData => {
+        const labels = jsonData.map(entry => entry.country);
+        const densities = jsonData.map(entry => entry.density);
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+
+        const myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Population Density',
+              data: densities,
+              backgroundColor: 'rgba(54, 162, 235, 0.5)',
+              borderColor: 'rgba(54, 162, 235, 1)',
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      });
+
+      //2
+      const xValues = [50,60,70,80,90,100,110,120,130,140,150];
+const yValues = [7,8,8,9,9,9,10,11,14,14,15];
+
+new Chart("myChart2", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor:"rgba(0,0,255,1.0)",
+      borderColor: "rgba(0,0,255,0.1)",
+      data: yValues
+    }]
+  }
+
+});
+  </script>
+</body>
+</html>
