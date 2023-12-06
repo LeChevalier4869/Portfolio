@@ -239,7 +239,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         </form>
       </div>
 
-      <!-- About API -->
+      <!-- About API 1-->
       <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="java">
         <h2 class="w3-text-light-grey">API</h2>
         <hr style="width:200px" class="w3-opacity">
@@ -247,6 +247,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <h3>JavaScript Web Workers API</h3>
         <p>Joke: <i id="demo" style="color: white"></i></p>
         <button onclick="myfunction()">press for joke</button> 
+
+        <p>Cat: <i id="demo2" style="color: white"></i></p>
+        <button onclick="myfunction2()">press for cat</button> 
 
       </div>
 
@@ -273,6 +276,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         </button>
       </p>
     </form>
+
+    <form 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbx0GRAWIl40C1ATFDIjZkGavDQNn7-JLLQothi6ZV-IQMzAop9mX3nQ5wr1FBzrtX4a/exec"
+>
+  <input name="Email" type="email" placeholder="Email" required>
+  <input name="Name" type="text" placeholder="Name" required>
+  <button type="submit">Send</button>
+</form>
 
 <script>
     // 5 lab
@@ -330,7 +342,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     document.getElementById("pythagoras").innerHTML = result;
     }
 
-  
+    // api1
     function myfunction() {
         fetch("https://official-joke-api.appspot.com/random_joke")
           .then(function(response){
@@ -341,6 +353,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             for(let x in data) {
               txt += data[x] + " ";
               document.getElementById("demo").innerHTML = txt;
+            };
+            return data;
+          })
+    }
+
+    //api2
+    function myfunction2() {
+        fetch("https://http.cat/[status_code]")
+          .then(function(response){
+            return response.json()
+          })
+          .then(function(data){
+            let txt = "";
+            for(let x in data) {
+              txt += data[x] + " ";
+              document.getElementById("demo2").innerHTML = txt;
             };
             return data;
           })
